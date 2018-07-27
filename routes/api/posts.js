@@ -43,6 +43,7 @@ router.post(
     if (!isValid) {
       return res.status(400).json(errors);
     }
+
     const { text, name, avatar } = req.body;
     const newPost = new Post({
       text,
